@@ -1,0 +1,164 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Phan Tran Minh Toan
+  ID: s3963231
+  Acknowledgement:  https://github.com/TomHuynhSG/COSC2430-Web-Programming-materials 
+  https://www.w3schools.com/html/default.asp
+  https://chat.openai.com/
+  https://stackoverflow.com/ 
+ */
+body {
+    background-color: #E3FDFD;
+    scroll-behavior: smooth;
+    font: sans-serif;
+}
+
+.content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background : #A6E3E9;
+    position: sticky;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+.header, .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    width: 70px;
+    margin-top: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 10;
+    text-align: center;
+  }
+  
+  header nav li {
+    display: inline-block;
+  }
+  
+  header nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 55px;
+    padding: 50px 0 58px;
+    align-items: center;
+    background : #A6E3E9;
+    height: 100px;
+}
+
+.contact {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.table {
+    align-items: center;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 30px ;
+}
+
+#fiction, #non-fiction, #text-book, .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mystery, #modern-horror, #fantasy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.footer-nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #A6E3E9;
+}
+
+section.breadcrumb li {
+    display: inline;
+}
+
+section.breadcrumb li+li:before{
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+section.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+section.breadcrumb li a:hover{
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.mobile-nav {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+        align-items: flex-end;
+        padding: auto;
+        display: none;
+    }
+
+    .nav ul {
+    flex-direction: column;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+    .mobile-nav:hover+.nav{
+        display: block;
+    }
+    .nav:hover{
+        display: block;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input, select, textarea{
+        display: block;
+        margin-top: 5px;
+    }
+} 

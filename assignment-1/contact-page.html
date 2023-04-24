@@ -1,0 +1,144 @@
+<!--
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Phan Tran Minh Toan
+  ID: s3963231
+  Acknowledgement:  https://github.com/TomHuynhSG/COSC2430-Web-Programming-materials 
+  https://www.w3schools.com/html/default.asp
+  https://chat.openai.com/
+  https://stackoverflow.com/ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore📚</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="content">
+        <a href="home-page.html">
+          <img src="image/Library logo.png" alt="logo" class="logo" />
+        </a>
+        <h1><strong>Fiction Category</strong></h1>
+        <div class="mobile-nav">☰</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="#fantasy">Category 1</a>
+          <a href="#mystery">Category 2</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h3>Contact us</h3>
+      <form action="app/form-processing" method="post">
+        <label for="contact-purpose">Contact Purpose</label>
+        <select id="contact-purpose" name="contact-purpose">
+          <option value="sell-books">I want to sell books</option>
+          <option value="buy-books">I want to buy books</option>
+        </select>
+        <br />
+        <br />
+        <fieldset>
+          <legend><strong>Your personal infomation</strong></legend>
+          <input type="text" id="name" name="name" />
+          <label for="name">Full name</label>
+          <br />
+          <br />
+          <input type="email" id="email" name="email" />
+          <label for="email">Email address</label>
+          <br />
+          <br />
+          <input type="number" name="phone" id="phone" />
+          <label for="phone">Contact number</label>
+          <br />
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend><strong>Contact preference</strong></legend>
+          <input type="checkbox" name="contact1" id="contac1" />
+          <label for="contact1">By phone</label>
+          <input type="checkbox" name="contact2" id="contact2" />
+          <label for="contact2">By email</label>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Receive weekly newsletter</strong></legend>
+          <label for=""
+            ><input
+              type="radio"
+              id="newsletter"
+              name="newsletter"
+              value="yes"
+              checked
+            />Yes</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              id="newsletter"
+              name="newsletter"
+              value="no"
+            />No</label
+          >
+        </fieldset>
+
+        <label><strong>Extra notes</strong></label>
+        <textarea name="notes" id="notes" cols="40" rows="7"></textarea>
+
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+          <button type="submit">Reset</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="contact">
+        <a href="mailto:minhtoanpt2002@gmail.com" target="_blank">
+          <img src="image/Gmail-logo.png" alt="Gmail" width="40px" />
+        </a>
+        <a href="https://www.facebook.com/bon.tonythe/" target="_blank">
+          <img
+            src="image/Facebook_f_logo_(2019).svg.webp"
+            alt="Facebook"
+            width="25px"
+          />
+        </a>
+        <a href="https://www.instagram.com/cestb0n/" target="_blank">
+          <img src="image/Instagram-Logo.png" alt="Instagram" width="40px" />
+        </a>
+      </div>
+      <hr />
+      <section class="footer-nav-bar">
+        <table>
+          <tbody align="center">
+            <tr>
+              <th><strong>About us</strong></th>
+              <th><strong>Account</strong></th>
+              <th><strong>Contact</strong></th>
+            </tr>
+            <tr>
+              <td>Who are we</td>
+              <td>Log in</td>
+              <td>Hotline</td>
+            </tr>
+            <tr>
+              <td>Policy</td>
+              <td>Sign up</td>
+              <td>Contact support</td>
+            </tr>
+            <tr>
+              <td>Terms</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div></div>
+    </footer>
+  </body>
+</html>
